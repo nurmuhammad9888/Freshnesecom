@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freshnesecom</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
 
 </head>
@@ -21,12 +24,368 @@
 
     <!-- Main start -->
     <main class="site-main">
-        <!-- Hero section start  -->
-        <section class="hero">
+        <section class="content pt-2">
+            <div class="container">
+                <h2 class="sr-only">Content</h2>
+                <div class="container">
+                    <!-- breadcrumb -->
+                    <nav aria-label="breadcrumb mb-5">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <a class="text-secondary text-decoration-none" href="./index.html">Homepage</a>
+                            </li>
+                            <li class="breadcrumb-item active text-dark" aria-current="page">Fruits and vegetables</li>
+                        </ol>
+                    </nav>
 
+                    <div class="row align-items-center justify-content-between">
+                        <div class="col-12 col-md-4">
+                            <h3 class="content__title fw-bold">
+                                Fruit and vegetables
+                            </h3>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <ul class="list-unstyled views-list d-flex gap-3 mb-0 text-secondary">
+                                <li class="list-group-item views-list__item views-list__item--active" data-view="grid">
+                                    Grid view
+                                </li>
+                                <li class="list-group-item views-list__item" data-view="list">
+                                    List view
+                                </li>
+                                <li class="list-group-item views-list__item">
+                                    Products
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- form -->
+                    <form class="custom-form mb-3" action="https://echo.hmlacademy.ru/courses">
+                        <div class="input-group">
+                            <div class="row gap-3">
+                                <div class="col-12 col-sm-auto bg-light border border-2 rounded py-1 px-2">
+                                    <div class="form-check form-check-inline form-radio-wrapper">
+                                        <input class="form-check-input" type="radio" name="user_filter"
+                                            id="filterByText">
+                                        <label class="form-check-label" for="filterByText">
+                                            Filter text
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-auto bg-light border border-2 rounded py-1 px-2">
+                                    <div class="form-check form-check-inline d-flex">
+                                        <input class="form-check-input" type="checkbox" name="user_filter"
+                                            id="filterByText2" placeholder="Filter">
+
+                                        <label class="form-check-label ms-1" for="filterByText2">
+                                            Filter
+                                        </label>
+
+                                        <span class="input-group-text px-1 py-0 bg-white ms-2 fw-bold"
+                                            id="basic-addon2">nbm</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-auto bg-light border border-2 rounded py-1 px-2">
+                                    <div class="form-check form-check-inline d-flex">
+                                        <input class="form-check-input" type="checkbox" name="user_filter"
+                                            id="filterByText2" placeholder="Filter">
+
+                                        <label class="form-check-label ms-1" for="filterByText2">
+                                            Filter
+                                        </label>
+
+                                        <span class="input-group-text px-1 py-0 bg-white ms-2 fw-bold"
+                                            id="basic-addon2">nbm</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-auto bg-light border border-2 rounded py-1 px-2">
+                                    <div class="form-check form-check-inline d-flex">
+                                        <input class="form-check-input" type="checkbox" name="user_filter"
+                                            id="filterByText2" placeholder="Filter">
+
+                                        <label class="form-check-label ms-1" for="filterByText2">
+                                            Nbm <span class="badge text-bg-secondary">12</span>
+                                        </label>
+
+                                        <span class="input-group-text px-1 py-0 bg-white ms-2 fw-bold"
+                                            id="basic-addon2">nbm</span>
+                                        <select
+                                            class="form-select form-select-lg w-auto ms-auto py-0 fs-6 m-0 bg-transparent border-0 text-dark fw-bold"
+                                            aria-label=".form-select-lg example">
+                                            <option selected>Select</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="row align-items-baseline d-flex">
+                        <div class="col col-sm-8 col-md">
+                            <!-- pagination -->
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link text-secondary fs-6 border-0"
+                                            href="#">Page:</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link text-dark border-0" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link text-dark border-0" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link text-secondary border-0" href="#">3</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link text-dark border-0" href="#">4</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="col col-sm-8   col-md">
+                            <select class="form-select bg-success text-white fw-bold fs-6 w-auto"
+                                aria-label="Default select example">
+                                <option>Show more products</option>
+                                <option value="1"> Product One</option>
+                                <option value="2"> Product Two</option>
+                                <option value="3"> Product Three</option>
+                            </select>
+                        </div>
+
+                        <div class="col col-sm-4 col-md">
+                            <span class="d-flex flex-row-reverse align-items-center gap-1 fs-6 text-secondary">
+                                Products <span class="badge bg-light text-success">336</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!-- Hero section finish  -->
 
+        <!-- main content goes here -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-4">
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <h3 class="fw-bold fs-4">
+                                    Categories
+                                </h3>
+                                <ul class="list-unstyled">
+                                    <li class="list-group-item">
+                                        Category name
+                                        <span class="badge bg-light text-success">
+                                            320
+                                        </span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Category name
+                                        <span class="badge bg-light text-success">
+                                            112
+                                        </span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Category name
+                                        <span class="badge bg-light text-success">
+                                            32
+                                        </span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        Category name
+                                        <span class="badge bg-light text-success">
+                                            48
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <h3 class="fw-bold fs-3">
+                                    Brands
+                                </h3>
+                                <ul class="list-unstyled">
+                                    <li class="list-group-item">
+                                        <div class="form-check form-check-inline form-radio-wrapper">
+                                            <input class="form-check-input" type="checkbox" name="user_filter"
+                                                id="filterByText">
+                                            <label class="form-check-label" for="filterByText">
+                                                Filter text
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="form-check form-check-inline form-radio-wrapper">
+                                            <input class="form-check-input" type="checkbox" name="user_filter"
+                                                id="filterByText">
+                                            <label class="form-check-label" for="filterByText">
+                                                Filter text
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="form-check form-check-inline form-radio-wrapper">
+                                            <input class="form-check-input" type="checkbox" name="user_filter"
+                                                id="filterByText">
+                                            <label class="form-check-label" for="filterByText">
+                                                Filter text
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="form-check form-check-inline form-radio-wrapper">
+                                            <input class="form-check-input" type="checkbox" name="user_filter"
+                                                id="filterByText">
+                                            <label class="form-check-label" for="filterByText">
+                                                Filter text
+                                            </label>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-sm-12">
+                                <h3 class="fw-bold fs-3">
+                                    Rating
+                                </h3>
+                                <ul class="list-unstyled">
+                                    <li class="list-group-item">
+                                        <div class="form-check form-check-inline form-radio-wrapper">
+                                            <input class="form-check-input" type="checkbox" name="user_filter"
+                                                id="filterByText">
+                                            <label class="form-check-label" for="filterByText">
+                                                <i class="fas fa-star fas fa-star--yellow"></i>
+                                                <i class="fas fa-star fas fa-star--yellow"></i>
+                                                <i class="fas fa-star fas fa-star--yellow"></i>
+                                                <i class="fas fa-star fas fa-star--yellow"></i>
+                                                <i class="fas fa-star fas fa-star--yellow"></i>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="form-check form-check-inline form-radio-wrapper">
+                                            <input class="form-check-input" type="checkbox" name="user_filter"
+                                                id="filterByText">
+                                            <label class="form-check-label" for="filterByText">
+                                                <i class="fas fa-star fas fa fa-star--yellow"></i>
+                                                <i class="fas fa-star fas fa fa-star--yellow"></i>
+                                                <i class="fas fa-star fas fa fa-star--yellow"></i>
+                                                <i class="fas fa-star fas fa fa-star--yellow"></i>
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="form-check form-check-inline form-radio-wrapper">
+                                            <input class="form-check-input" type="checkbox" name="user_filter"
+                                                id="filterByText">
+                                            <label class="form-check-label" for="filterByText">
+                                                <i class="fas fa-star fas fa-star--yellow"></i>
+                                                <i class="fas fa-star fas fa-star--yellow"></i>
+                                                <i class="fas fa-star fas fa-star--yellow"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="form-check form-check-inline form-radio-wrapper">
+                                            <input class="form-check-input" type="checkbox" name="user_filter"
+                                                id="filterByText">
+                                            <label class="form-check-label" for="filterByText">
+                                                <i class="fas fa-star fas fa-star--yellow"></i>
+                                                <i class="fas fa-star fas fa-star--yellow"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="form-check form-check-inline form-radio-wrapper">
+                                            <input class="form-check-input" type="checkbox" name="user_filter"
+                                                id="filterByText">
+                                            <label class="form-check-label" for="filterByText">
+                                                <i class="fas fa-star fas fa-star--yellow"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-6 col-sm-12">
+                                <form action="https://ehco.htmlacademy.ru/courses" class="position-relative">
+                                    <h3 class="fw-bold fs-3">Price</h3>
+                                    <input class="form-check price-input" type="range" name="user_range" id="price">
+                                    <span class="range-span"></span>
+
+                                    <!-- minmax -->
+                                    <div class="d-flex gap-4 mb-4">
+                                        <div class="form-field">
+                                            <label for="min">Min</label>
+                                            <input class="form-control text-secondary rounded-3" type="text"
+                                                name="user_min" id="min" min="0" value="0" disabled>
+
+                                        </div>
+                                        <div class="form-field">
+                                            <label for="max">Max</label>
+                                            <input class="form-control text-secondary rounded-3" type="text"
+                                                name="user_max" id="max" min="100" value="100" disabled>
+
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <button class="btn btn-success text-white">Apply</button>
+
+                                        <button class="btn">Reset</button>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- cards -->
+                    <div class="col-12 col-sm-8">
+                        <div class="row" id="cardWrapper">
+                            <template data-card>
+                                <div class="col-12 col-xl-4 ">
+                                    <div class="card">
+                                        <img class="card-img-top mb-4" width="236" height="138"
+                                            src="https://via.placeholder.com/236x185" alt="template image">
+
+                                        <div class="card-body">
+                                            <h3 class="card-title">Product title</h3>
+                                            <p class="card-text">Space for a small product description</p>
+                                            <span>
+                                                <i class="fas fa-star text-dark"></i>
+                                                <i class="fas fa-star text-dark"></i>
+                                                <i class="fas fa-star text-dark"></i>
+                                                <i class="fas fa-star text-dark"></i>
+                                                <i class="fas fa-star text-light"></i>
+                                            </span>
+
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <p class="fs-2 mb-0">36.99 USD</p>
+                                                    <del class="text-secondary">48.56</del>
+                                                </div>
+                                                <button class="btn btn-success text-white">Buy now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Main finish  -->
 
@@ -38,6 +397,7 @@
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/card.js"></script>
 </body>
 
 </html>

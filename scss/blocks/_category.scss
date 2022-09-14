@@ -1,0 +1,35 @@
+input[type="checkbox"] {
+  accent-color: #6a983c !important;
+}
+
+.views-list__item {
+  font-size: 12px;
+}
+
+.views-list__item--active {
+  color: #000;
+}
+
+.form-select::marker {
+  border: 5px solid rebeccapurple !important;
+}
+
+.fas.fa-star {
+  color: #d1d1d1;
+}
+
+.fas.fa-star--yellow {
+  color: yellow;
+}
+
+.range-span {
+  position: absolute;
+  top: 33%;
+  left: 15%;
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: rgb(116, 113, 113);
+  border: 2px solid white;
+  accent-color: green !important;
+}
