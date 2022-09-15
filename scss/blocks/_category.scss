@@ -1,17 +1,68 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--second-font-family);
+}
+
+.fz-100 {
+  font-size: 12px;
+}
+
+.fz-200 {
+  font-size: 14px;
+}
+
+.ff-main {
+  font-family: var(--main-font-family);
+}
+
+.ff-secondary {
+  font-family: var(--second-font-family);
+}
+
 input[type="checkbox"] {
-  accent-color: #6a983c !important;
+  width: 20px;
+  height: 20px;
+  box-shadow: none !important;
+}
+
+input[type="range"] {
+  accent-color: #6a983c;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #6a983c !important;
+  border-color: #6a983c !important;
+}
+
+input[type="radio"]:checked {
+  background-color: #000 !important;
 }
 
 .views-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 12px;
+  cursor: pointer;
+  padding-left: 30px;
+
+  &:nth-child(1) {
+    background-image: url("../../images/ic-layout-square-grid.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
+
+  &:nth-child(2) {
+    background-image: url("../../images/ic-layout-sections.svg");
+    background-repeat: no-repeat;
+    background-position: center left;
+  }
 }
 
 .views-list__item--active {
   color: #000;
-}
-
-.form-select::marker {
-  border: 5px solid rebeccapurple !important;
 }
 
 .fas.fa-star {
@@ -24,12 +75,51 @@ input[type="checkbox"] {
 
 .range-span {
   position: absolute;
-  top: 33%;
+  top: 22.5%;
   left: 15%;
   width: 20px;
   aspect-ratio: 1;
   border-radius: 50%;
-  background-color: rgb(116, 113, 113);
+  background-color: #6a983c;
   border: 2px solid white;
   accent-color: green !important;
+
+  &:active {
+    background-color: #6a983c;
+  }
+}
+
+.card-list-wrapper {
+  display: none !important;
+}
+
+#pcsText {
+  margin-left: 45px;
+}
+
+.cardImg {
+  max-height: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button.btn-success {
+  border: 2px solid #46760a !important;
+}
+
+.filters-list li:not(:first-child) {
+  // padding-block: 10px;
+  border-radius: 12px;
+  font-family: var(--second-font-family);
+  font-size: 12px;
+  padding-right: 24px;
+  padding-left: 8px;
+  background-image: url("../../images/ic-actions-close-simple.svg");
+  background-repeat: no-repeat;
+  background-position: right 5% center;
+  background-size: 7px 7px;
+}
+
+.cards {
+  padding-top: 64px;
 }
