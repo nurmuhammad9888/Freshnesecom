@@ -4,6 +4,7 @@
   --second-font-family: "Poppins", "Arial", sans-serif;
   --main-font-weight: 400;
   --main-body-bg-color: #fff;
+  --main-body-bg-color: #fff;
   --main-text-color: #151515;
 }
 
@@ -387,7 +388,6 @@ body {
   width: 1px;
 }
 
-<<<<<<< HEAD
 .font-fam {
   font-family: var(--second-font-family);
 }
@@ -551,36 +551,6 @@ body {
   margin-bottom: 73px;
 }
 
-/* FOOTER START*/
-.footer-style a {
-  margin-top: 16px;
-  display: inline-block;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 19px;
-  text-decoration: none;
-  color: #6A983C;
-}
-
-.site-footer {
-  margin-top: 64px;
-}
-
-.footer-span {
-  max-width: 1084px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.footer-span span {
-  margin-top: 16px;
-  margin-right: 12px;
-  padding: 6px 10px;
-=======
 .billing-info {
   padding-bottom: 64px;
 }
@@ -604,28 +574,10 @@ body {
 }
 
 .billing-label {
->>>>>>> d48568e6daec5d70705e2836ee9c4c38ffdea59e
   font-family: var(--second-font-family);
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
-<<<<<<< HEAD
-  color: #151515;
-  background: #F5F5F5;
-  border-radius: 12px;
-}
-
-.copyright p {
-  margin-top: 48px;
-  margin-bottom: 64px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: #151515;
-}
-
-/* FOOTER FINISH*//*# sourceMappingURL=main.css.map */
-=======
   color: var(--main-text-color);
 }
 
@@ -1127,5 +1079,50 @@ body {
   font-size: 14px;
   line-height: 19px;
   color: var(--main-text-color);
+}
+
+.footer-style a {
+  margin-top: 16px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  text-decoration: none;
+  color: #6A983C;
+}
+
+.site-footer {
+  margin-top: 64px;
+}
+
+.footer-span {
+  max-width: 1084px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-span span {
+  margin-top: 16px;
+  margin-right: 12px;
+  padding: 6px 10px;
+  font-family: var(--second-font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #151515;
+  background: #F5F5F5;
+  border-radius: 12px;
+}
+
+.copyright p {
+  margin-top: 48px;
+  margin-bottom: 64px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #151515;
 }/*# sourceMappingURL=main.css.map */
->>>>>>> d48568e6daec5d70705e2836ee9c4c38ffdea59e
