@@ -13400,11 +13400,12 @@ button.btn-success {
   padding: 6px 10px;
 
 .product-hero {
-  padding-top: 48px;
+  padding-top: 16px;
   padding-bottom: 48px;
 }
 
 .product-hero-img {
+  margin-top: 65px;
   margin-bottom: 96px;
   padding-top: 0;
   padding-bottom: 32px;
