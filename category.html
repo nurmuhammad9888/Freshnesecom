@@ -45,7 +45,7 @@
                             </h3>
                         </div>
                         <div class="col-12 col-md-4">
-                            <ul class="list-unstyled views-list d-flex gap-3 mb-0 text-secondary">
+                            <ul class="list-unstyled views-list d-flex gap-3 mb-0 text-secondary mb-3 mb-sm-0">
                                 <li class="list-group-item views-list__item views-list__item--active" data-view="grid">
                                     Grid view
                                 </li>
@@ -114,7 +114,7 @@
                                             id="filterByText2" placeholder="Filter">
 
                                         <label class="form-check-label ms-1 ff-secondary" for="filterByText2">
-                                            Nbm <span class="badge text-bg-secondary">12</span>
+                                            Filter <span class="badge text-bg-secondary fz-100 p-1">12</span>
                                         </label>
 
                                         <span class="input-group-text px-1 py-0 bg-white ms-2 fw-bold ff-secondary"
@@ -150,7 +150,7 @@
         <section class="cards">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-sm-3">
+                    <div class="col-12 col-md-4 col-xxl-2">
                         <div class="row">
                             <div class="col-6 col-sm-12">
                                 <h3 class="fw-bold fs-4">
@@ -324,9 +324,8 @@
                                         </div>
                                     </div>
 
-                                    <div>
-                                        <button
-                                            class="btn btn-success border border-success text-white mb-1">Apply</button>
+                                    <div class="mb-4">
+                                        <button class="btn btn-success border border-success text-white">Apply</button>
 
                                         <button class="btn">Reset</button>
                                     </div>
@@ -336,10 +335,10 @@
                         </div>
                     </div>
                     <!-- cards -->
-                    <div class="col-12 col-sm-9 d-grid mb-5">
+                    <div class="col-12 col-md-8 col-xxl-10 d-grid mb-5 ps-xl-5">
                         <template data-card>
-                            <div class="col-12 col-xl-3">
-                                <div class="card" style="min-width: 250px;">
+                            <div class="col-12 col-xl-3" style="min-width:min(320px,90%);">
+                                <div class="card rounded-5">
                                     <img class="card-img-top mb-4" width="236" height="138"
                                         src="https://via.placeholder.com/236x185" alt="template image">
 
@@ -369,14 +368,15 @@
                         </template>
                         <template data-list-card>
                             <div class="col-12 mb-5">
-                                <div class="card">
+                                <div class="card rounded-5">
                                     <div class="row">
                                         <div class="col-12 col-lg-4">
-                                            <img class="card-img-top cardImg mb-0" width="268" height="280"
+                                            <img class="card-img-top cardListImg mb-0" width="268" height="280"
                                                 src="https://via.placeholder.com/268x280" alt="template image">
                                         </div>
 
-                                        <div class="card-body col-8 d-flex justify-content-between">
+                                        <div
+                                            class="card-body col-8 d-flex justify-content-between flex-column flex-sm-row">
                                             <div>
                                                 <h3 class="card-title">Product title</h3>
                                                 <p class="card-text">Space for a small product description</p>
@@ -389,7 +389,7 @@
                                                 </span>
 
                                                 <div class="d-grid">
-                                                    <ul class=" list-unstyled">
+                                                    <ul class="list-unstyled mb-0 pb-0">
                                                         <li class="d-flex text-secondary fz-200 mb-2 gap-3">
                                                             <span>
                                                                 Fresheness
@@ -464,7 +464,7 @@
                                 </div>
                             </div>
                         </template>
-                        <div class="row gap-1 gap-xl-3" data-card-wrapper>
+                        <div class="row gap-2 gap-xl-3" data-card-wrapper>
                         </div>
                         <!-- <div class="row card-list-wrapper" data-card-list-wrapper>
                         </div> -->

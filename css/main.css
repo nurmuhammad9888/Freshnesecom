@@ -11206,7 +11206,7 @@ input[type=radio]:checked {
 }
 
 .views-list__item--active {
-  color: #000;
+  color: #000 !important;
 }
 
 .fas.fa-star {
@@ -11242,8 +11242,11 @@ input[type=radio]:checked {
 
 .cardImg {
   max-height: 100%;
-  height: 100%;
   object-fit: cover;
+}
+
+.cardListImg {
+  height: 100%;
 }
 
 button.btn-success {
