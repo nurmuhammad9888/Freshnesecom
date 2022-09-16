@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshnesecom</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+</head>
+<body>
+    
+    <!-- Header start -->
+    <header class="site-header">
+    </header>
+    <!-- Header finish -->
+    
+    <!-- Main start -->
+    <main class="site-main">
+        <!-- Hero section start  -->
+        <section class="checkout-hero">
+            <div class="container">
+                <div class="row">
+                    <h2 class="visually-hidden">
+                        Registration
+                    </h2>
+                    
+                    <div class="col-12 col-md-8">
+                        <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                            <div class="billing-info">
+                                <div class="billing-textbox d-flex align-items-end justify-content-between">
+                                    <div class="billing-descbox me-2">
+                                        <h3 class="billing-text mt-0 mb-1">
+                                            Billing info
+                                        </h3>
+                                        <p class="billing-desc m-0">
+                                            Please enter your billing info
+                                        </p>
+                                    </div>
+                                    <span class="billing-desc">
+                                        Step 1 of 5
+                                    </span>
+                                </div>
+                                <div class="row m-0">
+                                    <label class="billing-label col-12 col-md-6 pt-0 pe-0 pe-md-3 pb-3 ps-0">
+                                        First name
+                                        <input class="billing-input form-control" type="text" name="user_first_name" aria-label="Enter your first name" minlength="3" maxlength="100000" placeholder="First name" required>
+                                    </label>
+                                    <label class="billing-label col-12 col-md-6 pt-3 pt-md-0 pe-0 pb-3 ps-0 ps-md-3">
+                                        Last name
+                                        <input class="billing-input form-control" type="text" name="user_last_name" aria-label="Enter your last name" minlength="3" maxlength="100000" placeholder="Last name" required>
+                                    </label>
+                                    <label class="billing-label col-12 col-md-6 pt-3 pe-0 pe-md-3 pb-3 ps-0">
+                                        Email addess
+                                        <input class="billing-input form-control" type="email" name="user_email" aria-label="Enter your email addess" placeholder="Email addess">
+                                    </label>
+                                    <label class="billing-label col-12 col-md-6 pt-3 pe-0 pb-3 ps-0 ps-md-3">
+                                        Phone number
+                                        <input class="billing-input form-control" type="number" name="user_phone" aria-label="Enter your phone number" placeholder="Phone number" required>
+                                    </label>
+                                    <label class="billing-label col-12 col-md-6 col-md-6 pt-3 pe-0 pe-md-3 pb-3 ps-0">
+                                        Address
+                                        <input class="billing-input form-control" type="text" name="user_adress" aria-label="Enter your address" minlength="3" maxlength="100000" placeholder="Address" required>
+                                    </label>
+                                    <label class="billing-label col-12 col-md-6 pt-3 pe-0 pb-3 ps-0 ps-md-3">
+                                        Town / City
+                                        <input class="billing-input form-control" type="text" name="user_town_or_sity" aria-label="Enter your town or city" minlength="3" maxlength="100000" placeholder="Town or city" required>
+                                    </label>
+                                    <label class="billing-label col-12 col-md-6 pt-3 pe-0 pe-md-3 pb-3 pb-md-0 ps-0">
+                                        State / Country
+                                        <input class="billing-input billing-datalist form-control" type="text" list="datalistOptions" id="exampleDataList" name="user_state_or_country" aria-label="Choose your state or country" minlength="3" maxlength="100000" placeholder="Choose a state or Country" required>
+                                        <datalist id="datalistOptions">
+                                            <option value="San Francisco">San Francisco</option>
+                                            <option value="New York">New York</option>
+                                            <option value="Seattle">Seattle</option>
+                                            <option value="Los Angeles">Los Angeles</option>
+                                            <option value="Chicago">Chicago</option>
+                                        </datalist>
+                                    </label>
+                                    <label class="billing-label col-12 col-md-6 pt-3 pe-0 pb-0 ps-0 ps-md-3">
+                                        ZIP/Postal code
+                                        <input class="billing-input form-control" type="number" name="user_zip_code" aria-label="Enter your postal code or ZIP" placeholder="Postal code or ZIP" required>
+                                    </label>
+                                </div>
+                                <label class="billing-check-label form-check-label d-flex align-items-center">
+                                    <input class="billing-check-input form-check-input" name="user_ship_to_different_adress" type="checkbox" value="1">
+                                    Ship to a different address?
+                                </label>
+                            </div>
+                            
+                            <div class="billing-metod">
+                                <div class="billing-textbox d-flex align-items-end justify-content-between">
+                                    <div class="billing-descbox me-2">
+                                        <h3 class="billing-text mt-0 mb-1">
+                                            Billing method
+                                        </h3>
+                                        <p class="billing-desc m-0">
+                                            Please enter your payment method
+                                        </p>
+                                    </div>
+                                    <span class="billing-desc">
+                                        Step 2 of 5
+                                    </span>
+                                </div>
+                                <label class="billing-radio-label d-flex align-items-center justify-content-between flex-wrap mb-3">
+                                    <span class="d-flex align-items-center">
+                                        <input class="billing-radio-input form-check-input mt-0" type="radio" name="user_billing_method" value="FedEx">
+                                        <span class="billing-radio-text">FedEx</span>
+                                    </span>
+                                    <span class="billing-radio-text">
+                                        <span class="billing-radio-text-color">+32 USD</span>
+                                        Additional price
+                                    </span>
+                                    <img src="./images/FedEx.svg" alt="FedEx logo">
+                                </label>
+                                <label class="billing-radio-label d-flex align-items-center justify-content-between flex-wrap mb-3">
+                                    <span class="d-flex align-items-center">
+                                        <input class="billing-radio-input form-check-input mt-0" type="radio" name="user_billing_method" value="DHL">
+                                        <span class="billing-radio-text">DHL</span>
+                                    </span>
+                                    <span class="billing-radio-text">
+                                        <span class="billing-radio-text-color">+15 USD</span>
+                                        Additional price
+                                    </span>
+                                    <img src="./images/dhl.svg" alt="FedEx logo">
+                                </label>
+                            </div>
+                            
+                            <div class="payment-method">
+                                <div class="billing-textbox d-flex align-items-end justify-content-between">
+                                    <div class="billing-descbox me-2">
+                                        <h3 class="billing-text mt-0 mb-1">
+                                            Payment method
+                                        </h3>
+                                        <p class="billing-desc m-0">
+                                            Please enter your payment method
+                                        </p>
+                                    </div>
+                                    <span class="billing-desc">
+                                        Step 3 of 5
+                                    </span>
+                                </div>
+                                
+                                <div class="payment-box p-3">
+                                    <label class="d-flex align-items-center justify-content-between">
+                                        <span class="d-flex align-items-center">
+                                            <input class="billing-radio-input form-check-input mt-0" type="radio" name="user_payment_method" value="Visa">
+                                            <span class="billing-radio-text">Credit card</span>
+                                        </span>
+                                        <img src="./images/visa.svg" alt="visa card logo">
+                                    </label>
+                                    <label class="payment-label payment-card-number-input d-flex flex-column">
+                                        Card number
+                                        <input class="payment-input form-control" type="number" name="user_card_number" aria-label="Enter your card number" placeholder="Card number" required>
+                                    </label>
+                                    <div class="d-flex flex-column flex-lg-row align-items-lg-center justify-content-between">
+                                        <label class="payment-label payment-card-holder-input">
+                                            Card holder
+                                            <input class="payment-input form-control" type="text" name="user_card_holder" aria-label="Enter your card holder" placeholder="Card holder" required>
+                                        </label>
+                                        <div class="d-flex align-items-center ps-lg-3 ms-lg-3">
+                                            <label class="payment-label me-3">
+                                                Expiration date
+                                                <input class="payment-input form-control" type="number" name="user_expiration_date" aria-label="Enter card expiration date" placeholder="DD/MM/YY" required>
+                                            </label>
+                                            <label class="payment-label">
+                                                CVC
+                                                <input class="payment-input form-control" type="number" name="user_CVC" aria-label="Enter card CVC" placeholder="CVC" required>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <label class="billing-radio-label d-flex align-items-center justify-content-between flex-wrap my-3">
+                                    <span class="d-flex align-items-center">
+                                        <input class="billing-radio-input form-check-input mt-0" type="radio" name="user_payment_method" value="PayPal">
+                                        <span class="billing-radio-text">PayPal</span>
+                                    </span>
+                                    <img src="./images/PayPal.svg" alt="paypal logo">
+                                </label>
+                                <label class="billing-radio-label d-flex align-items-center justify-content-between flex-wrap">
+                                    <span class="d-flex align-items-center">
+                                        <input class="billing-radio-input form-check-input mt-0" type="radio" name="user_payment_method" value="Bitcoin">
+                                        <span class="billing-radio-text">Bitcoin</span>
+                                    </span>
+                                    <img src="./images/Bitcoin_logo.svg" alt="bitcoin logo">
+                                </label>
+                            </div>
+                            
+                            <div class="additional-info">
+                                <div class="billing-textbox d-flex align-items-end justify-content-between">
+                                    <div class="billing-descbox me-2">
+                                        <h3 class="billing-text mt-0 mb-1">
+                                            Additional informations
+                                        </h3>
+                                        <p class="billing-desc m-0">
+                                            Need something else? We will make it for you!
+                                        </p>
+                                    </div>
+                                    <span class="billing-desc">
+                                        Step 4 of 5
+                                    </span>
+                                </div>
+                                
+                                <label class="billing-label d-flex flex-column">
+                                    Order notes
+                                    <textarea class="additional-input form-control" name="user_comment" minlength="3" maxlength="1000" placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..."></textarea>
+                                </label>
+                            </div>
+
+                            <div class="confirmation">
+                                <div class="billing-textbox d-flex align-items-end justify-content-between">
+                                    <div class="billing-descbox me-2">
+                                        <h3 class="billing-text mt-0 mb-1">
+                                            Confirmation
+                                        </h3>
+                                        <p class="billing-desc m-0">
+                                            We are getting to the end. Just few clicks and your order si ready!
+                                        </p>
+                                    </div>
+                                    <span class="billing-desc">
+                                        Step 5 of 5
+                                    </span>
+                                </div>
+
+                                <label class="billing-check-label confirmation-label form-check-label d-flex align-items-center">
+                                    <input class="billing-check-input form-check-input" name="user_agree_width_sending" type="checkbox" value="1">
+                                    I agree with sending an Marketing and newsletter emails. No spam, promissed!
+                                </label>
+                                <label class="billing-check-label confirmation-label-seccond form-check-label d-flex align-items-center">
+                                    <input class="billing-check-input form-check-input" name="user_agree_with_our_terms" type="checkbox" value="1">
+                                    I agree with our terms and conditions and privacy policy.
+                                </label>
+
+                                <button class="btn btn-success form-button">
+                                    Complete order
+                                </button>
+                            </div>
+
+                            <div class="security">
+                                <img src="./images/ic-security-safety.svg" alt="security-icon">
+
+                                <h3 class="security-text">
+                                    All your data are safe
+                                </h3>
+                                <p class="security-desc m-0">
+                                    We are using the most advanced security to provide you the best experience ever.
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="col-12 col-md-4">
+                        <div class="checkout-other-info px-3">   
+                            <h3 class="billing-text mt-0 mb-1">
+                                Order Summary
+                            </h3>
+                            <p class="billing-desc m-0">
+                                Price can change depending on shipping method and taxes of your state.
+                            </p>
+
+                            <ul class="top-products-list list-unstyled">
+                                <li class="top-products-item d-flex flex-column flex-xxl-row justify-content-between">
+                                    <div class="pe-2 me-2 mb-4 mb-lg-0">
+                                        <img class="top-products-item-img" src="./images/checkout-orange.jpg" 
+                                        width="100"
+                                        height="67"
+                                        srcset="./images//checkout-orange.jpg 1x , ./images//checkout-orange@2x.jpg 2x"
+                                        alt="orange img">
+                                        <ul class="top-products-item-img-list list-unstyled">
+                                            <li class="top-products-item-img-item d-flex align-items-center mb-2">
+                                                <a class="top-product-item-img-link" href="#">
+                                                    Wishlist
+                                                </a>
+                                            </li>
+                                            <li class="top-products-item-img-item d-flex align-items-center mb-2">
+                                                <a class="top-product-item-img-link" href="#">
+                                                    Compare
+                                                </a>
+                                            </li>
+                                            <li class="top-products-item-img-item d-flex align-items-center">
+                                                <a class="top-product-item-img-link" href="#">
+                                                    Remove
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="top-products-item-info d-flex align-items-end justify-content-between">
+                                        <div class="top-products-item-info-textbox me-1">
+                                            <h4 class="top-products-item-info-text mt0 mb-1">
+                                                Product title
+                                            </h4>
+                                            <div class="top-products-item-info-minibox d-flex justify-content-between">
+                                                <span class="top-products-item-info-minibox-color d-inline-block">
+                                                    Farm:
+                                                </span>
+                                                <span class="d-inline-block">
+                                                    Tharamis Farm
+                                                </span>
+                                            </div>
+                                            <div class="top-products-item-info-minibox d-flex justify-content-between">
+                                                <span class="top-products-item-info-minibox-color d-inline-block">
+                                                    Freshness:
+                                                </span>
+                                                <span class="d-inline-block">
+                                                    1 day old
+                                                </span>
+                                            </div>
+                                            <div class="top-products-item-info-starbox mt-2">
+                                                <i class="top-products-item-info-star fa-solid fa-star"></i>
+                                                <i class="top-products-item-info-star fa-solid fa-star"></i>
+                                                <i class="top-products-item-info-star fa-solid fa-star"></i>
+                                                <i class="top-products-item-info-star fa-solid fa-star"></i>
+
+                                                <i class="top-products-item-info-star-none fa-regular fa-star"></i>
+                                            </div>
+                                            <div class="top-products-item-info-price d-flex flex-column">
+                                                <span class="top-products-item-info-price" >36.99 USD</span>
+                                                <s class="top-products-item-info-price-old" >48.56 USD</s>
+                                            </div>
+                                        </div>
+                                        <div class="top-products-item-info-dropdown-box btn-group">
+                                            <span class="d-inline-block">
+                                                1pcs 
+                                            </span>
+
+                                            <span class="top-products-item-info-dropdown-line d-inline-block">
+                                            </span>
+
+                                            <button class="top-products-item-info-btn p-0 d-flex align-items-center" type="button" data-bs-toggle="dropdown">
+                                                Pcs
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="top-products-item d-flex flex-column flex-xxl-row justify-content-between">
+                                    <div class="pe-2 me-2 mb-4 mb-lg-0">
+                                        <img class="top-products-item-img" src="./images/checkout-orange.jpg" 
+                                        width="100"
+                                        height="67"
+                                        srcset="./images//checkout-orange.jpg 1x , ./images//checkout-orange@2x.jpg 2x"
+                                        alt="orange img">
+                                        <ul class="top-products-item-img-list list-unstyled">
+                                            <li class="top-products-item-img-item d-flex align-items-center mb-2">
+                                                <a class="top-product-item-img-link" href="#">
+                                                    Wishlist
+                                                </a>
+                                            </li>
+                                            <li class="top-products-item-img-item d-flex align-items-center mb-2">
+                                                <a class="top-product-item-img-link" href="#">
+                                                    Compare
+                                                </a>
+                                            </li>
+                                            <li class="top-products-item-img-item d-flex align-items-center">
+                                                <a class="top-product-item-img-link" href="#">
+                                                    Remove
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="top-products-item-info d-flex align-items-end justify-content-between">
+                                        <div class="top-products-item-info-textbox me-1">
+                                            <h4 class="top-products-item-info-text mt0 mb-1">
+                                                Product title
+                                            </h4>
+                                            <div class="top-products-item-info-minibox d-flex justify-content-between">
+                                                <span class="top-products-item-info-minibox-color d-inline-block">
+                                                    Farm:
+                                                </span>
+                                                <span class="d-inline-block">
+                                                    Tharamis Farm
+                                                </span>
+                                            </div>
+                                            <div class="top-products-item-info-minibox d-flex justify-content-between">
+                                                <span class="top-products-item-info-minibox-color d-inline-block">
+                                                    Freshness:
+                                                </span>
+                                                <span class="d-inline-block">
+                                                    1 day old
+                                                </span>
+                                            </div>
+                                            <div class="top-products-item-info-starbox mt-2">
+                                                <i class="top-products-item-info-star fa-solid fa-star"></i>
+                                                <i class="top-products-item-info-star fa-solid fa-star"></i>
+                                                <i class="top-products-item-info-star fa-solid fa-star"></i>
+                                                <i class="top-products-item-info-star fa-solid fa-star"></i>
+
+                                                <i class="top-products-item-info-star-none fa-regular fa-star"></i>
+                                            </div>
+                                            <div class="top-products-item-info-price d-flex flex-column">
+                                                <span class="top-products-item-info-price" >36.99 USD</span>
+                                                <s class="top-products-item-info-price-old" >48.56 USD</s>
+                                            </div>
+                                        </div>
+                                        <div class="top-products-item-info-dropdown-box btn-group">
+                                            <span class="d-inline-block">
+                                                1pcs 
+                                            </span>
+
+                                            <span class="top-products-item-info-dropdown-line d-inline-block">
+                                            </span>
+
+                                            <button class="top-products-item-info-btn p-0 d-flex align-items-center" type="button" data-bs-toggle="dropdown">
+                                                Pcs
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Action</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Another action</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Something else here</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="#">Separated link</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <div class="checkout-other-info-pricebox">
+                                <div class="checkout-other-info-price d-flex justify-content-between align-items-center">
+                                    <span>
+                                        Subtotal
+                                    </span>
+                                    <span>
+                                        73.98 USD
+                                    </span>
+                                </div>
+                                <div class="checkout-other-info-price d-flex justify-content-between align-items-center">
+                                    <span>
+                                        Tax
+                                    </span>
+                                    <span>
+                                        17% 16.53 USD
+                                    </span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span>
+                                        Shipping
+                                    </span>
+                                    <span>
+                                        0 USD
+                                    </span>
+                                </div>
+                            </div>
+
+                            <form class="checkout-other-info-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                                <div class="input-group">
+                                    <input class="checkout-other-info-input form-control" type="text" name="user_promo_code" aria-label="Apply promo code" placeholder="Apply promo code" >
+                                    <button class="checkout-other-info-btn" type="button">Apply now</button>
+                                </div>
+                            </form>
+
+                            <div class="d-flex flex-column flex-lg-row justify-content-between">
+                                <div class="checkout-other-info-last-price-box">
+                                    <h4 class="checkout-other-info-last-price-text m-0">
+                                        Total Order
+                                    </h4>
+                                    <p class="checkout-other-info-last-price-desc m-0">
+                                        Guaranteed delivery day:  
+                                        <time datetime="2020-07-12 20:00">
+                                            June 12, 2020
+                                        </time>
+                                    </p>
+                                </div>
+                                <span class="checkout-other-info-last-price">
+                                    89.84 USD
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="verified">
+                    <p class="verified-desc">
+                        Copyright © 2020 Freshnesecom
+                    </p>
+                </div>
+            </div>
+        </section>
+                <!-- Hero section finish  -->
+            </main>
+            <!-- Main finish  -->
+            
+            <!-- Footer start -->
+            <footer class="site-footer">
+            </footer>
+            <!-- Footer finish -->
+            
+            <script src="./js/bootstrap.bundle.min.js"></script>
+            <script src="./js/main.js"></script>
+        </body>
+        </html>
