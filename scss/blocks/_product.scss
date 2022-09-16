@@ -142,28 +142,28 @@
     &:nth-child(1){
         & .product-shere-link{
             &::before{
-                background-image: url("../../images/product-facebook.svg");
+                background-image: url("../images/product-facebook.svg");
             }
         }
     }
     &:nth-child(2){
         & .product-shere-link{
             &::before{
-                background-image: url("../../images/product-pinterest.svg");
+                background-image: url("../images/product-pinterest.svg");
             }
         }
     }
     &:nth-child(3){
         & .product-shere-link{
             &::before{
-                background-image: url("../../images/product-twitter.svg");
+                background-image: url("../images/product-twitter.svg");
             }
         }
     }
     &:nth-child(4){
         & .product-shere-link{
             &::before{
-                background-image: url("../../images/product-linkedIn.svg");
+                background-image: url("../images/product-linkedIn.svg");
             }
         }
     }

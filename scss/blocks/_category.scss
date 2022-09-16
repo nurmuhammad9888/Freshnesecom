@@ -49,13 +49,13 @@ input[type="radio"]:checked {
   padding-left: 30px;
 
   &:nth-child(1) {
-    background-image: url("../../images/ic-layout-square-grid.svg");
+    background-image: url("../images/ic-layout-square-grid.svg");
     background-repeat: no-repeat;
     background-position: center left;
   }
 
   &:nth-child(2) {
-    background-image: url("../../images/ic-layout-sections.svg");
+    background-image: url("../images/ic-layout-sections.svg");
     background-repeat: no-repeat;
     background-position: center left;
   }
@@ -116,7 +116,7 @@ button.btn-success {
   font-size: 12px;
   padding-right: 24px;
   padding-left: 8px;
-  background-image: url("../../images/ic-actions-close-simple.svg");
+  background-image: url("../images/ic-actions-close-simple.svg");
   background-repeat: no-repeat;
   background-position: right 5% center;
   background-size: 7px 7px;
