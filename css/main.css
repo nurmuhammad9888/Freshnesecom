@@ -12535,6 +12535,173 @@ body {
   width: 1px;
 }
 
+.header-inner {
+  padding: 16px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.header-inner-link {
+  margin-right: 20px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #151515;
+  text-decoration: none;
+}
+
+.header-inner-link--last {
+  margin-right: 0;
+}
+
+.header-inner-link--first {
+  color: #6A983C;
+}
+
+.site-nav {
+  display: none;
+}
+
+.site-nav-open {
+  display: block;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.756);
+  position: absolute;
+  top: 90px;
+  right: 100px;
+  z-index: 20;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nav-link {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.header-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-icon {
+  display: inline-block;
+  background-image: url("../images/user-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.sale-icon {
+  margin-right: 27px;
+  margin-left: 26px;
+  display: inline-block;
+  background-image: url("../images/market.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.burger {
+  display: inline-block;
+  background-image: url("../images/burger.svg");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+.burger-close {
+  background-image: url("../../images/x-checkout.svg");
+}
+
+.input-group {
+  background-color: #F9F9F9;
+  border-radius: 10px;
+  border: 1px solid #a7a4a4;
+}
+
+.form-control {
+  border: none;
+}
+
+.sale-badge {
+  background-color: #E5704B;
+  color: #fff;
+}
+
+@media only screen and (min-width: 800px) {
+  .header-inner-link {
+    margin-right: 33px;
+  }
+  .header-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .site-nav {
+    display: block;
+  }
+  .burger {
+    display: none;
+  }
+  .sale-icon {
+    margin-right: 0;
+  }
+  .nav-link {
+    margin-right: 38px;
+    margin-bottom: 0;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6A983C;
+  }
+  .nav-link-last {
+    margin-right: 0;
+  }
+  .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 h1, .h1,
 h2,
 .h2,
