@@ -101,7 +101,7 @@
     height: 20px;
     margin-right: 18px;
     &:checked{
-        background-color: #6a983c;
+        background-color: #6a983c !important;
         border-color: #6a983c;
     }
 }
@@ -211,6 +211,7 @@
     font-weight: 700;
     font-size: 15px;
     line-height: 22px;
+    text-align: center;
     color: #fff;
 
     background-color: #6a983c;
